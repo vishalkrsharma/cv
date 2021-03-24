@@ -53,7 +53,7 @@ div{
     }
 }
 .intro-div{ 
-    background-image: url(/img/intro.svg);
+    background-image: url(img/intro.svg);
     background-size: cover;
     
 }
@@ -77,7 +77,7 @@ div{
     margin:0px;
 }
 .education-div{
-    background-image: url(/img/education.svg);
+    background-image: url(img/education.svg);
     background-size: cover;
 }
 .education-table{
@@ -88,7 +88,7 @@ div{
     color:#276678;
 }
 .lang-div{ 
-    background-image: url(/img/lang.svg);
+    background-image: url(img/lang.svg);
     
 }
 .lang-table{
@@ -115,7 +115,7 @@ tr{
     font-weight: bold;
 }
 .op-div{
-    background-image: url(/img/op.svg);
+    background-image: url(img/op.svg);
     text-align: center;
 }
 .op{
@@ -126,7 +126,7 @@ tr{
     padding:10px
 }
 .contact-me-div{
-    background-image: url(/img/contact-me.svg);
+    background-image: url(img/contact-me.svg);
     background-size: cover;
 }
 footer{
