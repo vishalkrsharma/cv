@@ -11,10 +11,24 @@ hr{
     display: block;
     margin:0 auto 0 auto;
 }
+div{
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000;    
+}
 td,th{
     vertical-align: top;
     padding: 10px 5px 10px 5px;
     text-align: left;
+}
+footer{
+    text-align:right;
+    padding:1%;
+}
+h5{
+    color: #f05454;
+    font-family: 'Courier New', Courier, monospace;
+    margin:0px;
 }
 .navbar{
     padding:0px;
@@ -33,11 +47,6 @@ td,th{
     -moz-box-shadow: 4px 4px 4px #000000;
     -webkit-box-shadow: 4px 4px 4px #000000;
     box-shadow: 4px 4px 4px #000000;  
-}
-div{
-    -moz-box-shadow: 10px 10px 16px #000000;
-    -webkit-box-shadow: 10px 10px 16px #000000;
-    box-shadow: 10px 10px 16px #000000;    
 }
 .intro-div, .education-div, .lang-div, .op-div, .contact-me-div{
     padding:2%;
@@ -128,13 +137,4 @@ tr{
 .contact-me-div{
     background-image: url(../img/contact-me.svg);
     background-size: cover;
-}
-footer{
-    text-align:right;
-    padding:1%;
-}
-h5{
-    color: #f05454;
-    font-family: 'Courier New', Courier, monospace;
-    margin:0px;
 }
