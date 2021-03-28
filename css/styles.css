@@ -1,7 +1,10 @@
+/* TAGS */
+
 body{
     margin: 0px;
     background-color: #202529;
 }
+
 hr{
     width:4%;
     background-color:#f4f9f9;
@@ -10,60 +13,81 @@ hr{
     border-width:5px;
     display: block;
     margin:0 auto 0 auto;
+
 }
-div{
-    -moz-box-shadow: 10px 10px 16px #000000;
-    -webkit-box-shadow: 10px 10px 16px #000000;
-    box-shadow: 10px 10px 16px #000000;    
-}
+
 td,th{
     vertical-align: top;
     padding: 10px 5px 10px 5px;
     text-align: left;
 }
+
 footer{
     text-align:right;
     padding:1%;
 }
+
 h5{
     color: #f05454;
     font-family: 'Courier New', Courier, monospace;
     margin:0px;
 }
-.navbar{
-    padding:0px;
-    padding-left: 10px;
-    border-radius: 10px;
+
+h3{
+    color: #f05454;
+    font-family: 'Courier New', Courier, monospace;
+    margin:0px;
 }
+
+tr{
+    font-family: 'Courier New', Courier, monospace;
+    color: #30475e;
+    font-weight: bold;
+}
+
+/* CLASSES */
+
+/* NAVBAR */
+
 .nvbr{
     margin: 20px 40px 0px 40px;
     border-radius: 4px;
     -moz-box-shadow: 4px 4px 4px #000000;
     -webkit-box-shadow: 4px 4px 4px #000000;
     box-shadow: 4px 4px 4px #000000;  
+}
 
+.navbar{
+    padding:0px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background: url(../img/navbar.svg);
 }
+
+.hacker{
+    margin: 1%;
+}
+
+.navbar-brand{
+    margin-left: 1%;
+}
+
 .collapse{
-    -moz-box-shadow: 4px 4px 4px #000000;
-    -webkit-box-shadow: 4px 4px 4px #000000;
-    box-shadow: 4px 4px 4px #000000;  
+    padding-right: 1%;
 }
-.intro-div, .education-div, .lang-div, .op-div, .contact-me-div{
+
+/* INTRO DIV */
+
+.intro-div{ 
+    background-image: url(../img/intro.svg);
+    background-size: cover;
     padding:2%;
     border-radius: 25px;
     margin: 1%;
     text-align: center;
-    
-}
-@media(max-width:1000px){
-    .intro-div, .education-div, .lang-div, .op-div, .contact-me-div{
-        padding:8%;
-        margin:5%;
-    }
-}
-.intro-div{ 
-    background-image: url(../img/intro.svg);
-    background-size: cover;
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000; 
     
 }
 .name{
@@ -85,9 +109,19 @@ h5{
     font-size: 30px;
     margin:0px;
 }
+
+/* EDUCATION DIV */
+
 .education-div{
     background-image: url(../img/education.svg);
     background-size: cover;
+    padding:2%;
+    border-radius: 25px;
+    margin: 1%;
+    text-align: center;
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000; 
 }
 .education-table{
     margin:0px auto 0px auto;
@@ -96,9 +130,18 @@ h5{
 .education-th{
     color:#276678;
 }
+
+/* LANG DIV */
+
 .lang-div{ 
     background-image: url(../img/lang.svg);
-    
+    padding:2%;
+    border-radius: 25px;
+    margin: 1%;
+    text-align: center;
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000; 
 }
 .lang-table{
     margin:0px auto 0px auto;
@@ -113,19 +156,18 @@ h5{
     margin:0px;
     padding-bottom: 20px;
 }
-h3{
-    color: #f05454;
-    font-family: 'Courier New', Courier, monospace;
-    margin:0px;
-}
-tr{
-    font-family: 'Courier New', Courier, monospace;
-    color: #30475e;
-    font-weight: bold;
-}
+
+/* OP DIV */
+
 .op-div{
     background-image: url(../img/op.svg);
     text-align: center;
+    padding:2%;
+    border-radius: 25px;
+    margin: 1%;
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000; 
 }
 .op{
     padding-bottom: 30px;
@@ -134,7 +176,29 @@ tr{
     text-decoration: none;
     padding:10px
 }
+
+/* CONTACT ME DIV */
+
 .contact-me-div{
     background-image: url(../img/contact-me.svg);
     background-size: cover;
+    padding:2%;
+    border-radius: 25px;
+    margin: 1%;
+    text-align: center;
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000; 
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width:1000px){
+    .hacker{
+        width: 5%;
+    }
+    .intro-div, .education-div, .lang-div, .op-div, .contact-me-div{
+        padding:8%;
+        margin:5%;
+    }
 }
