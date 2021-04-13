@@ -1,8 +1,13 @@
-/* TAGS */
+/* tags */
+
+* {
+    font-weight: 500;
+}
 
 body{
     margin: 0px;
     background-color: #202529;
+    
 }
 
 hr{
@@ -27,7 +32,7 @@ footer{
     padding:1%;
 }
 
-h5{
+h4{
     color: #f05454;
     font-family: 'Courier New', Courier, monospace;
     margin:0px;
@@ -45,38 +50,9 @@ tr{
     font-weight: bold;
 }
 
-/* CLASSES */
+/* classes */
 
-/* NAVBAR */
-
-.nvbr{
-    margin: 20px 40px 0px 40px;
-    border-radius: 4px;
-    -moz-box-shadow: 4px 4px 4px #000000;
-    -webkit-box-shadow: 4px 4px 4px #000000;
-    box-shadow: 4px 4px 4px #000000;  
-}
-
-.navbar{
-    padding:0px;
-    padding-left: 10px;
-    border-radius: 10px;
-    background: url(../img/navbar.svg);
-}
-
-.hacker{
-    margin: 1%;
-}
-
-.navbar-brand{
-    margin-left: 1%;
-}
-
-.collapse{
-    padding-right: 1%;
-}
-
-/* INTRO DIV */
+/* intro-div */
 
 .intro-div{ 
     background-image: url(../img/intro.svg);
@@ -85,8 +61,6 @@ tr{
     border-radius: 25px;
     margin: 1%;
     text-align: center;
-    -moz-box-shadow: 10px 10px 16px #000000;
-    -webkit-box-shadow: 10px 10px 16px #000000;
     box-shadow: 10px 10px 16px #000000; 
     
 }
@@ -96,10 +70,12 @@ tr{
     font-family: 'Sacramento', cursive;
     font-size: 70px;
     margin: 0px;
+    font-weight: 500;
 }
 .my-pic{
     display:block;
     margin:1px auto 10px auto;
+    border-radius: 50%;
 }
 .intro{
     text-align:center;
@@ -110,28 +86,26 @@ tr{
     margin:0px;
 }
 
-/* EDUCATION DIV */
+/* education-div */
 
-.education-div{
+.edu-div{
     background-image: url(../img/education.svg);
     background-size: cover;
     padding:2%;
     border-radius: 25px;
     margin: 1%;
     text-align: center;
-    -moz-box-shadow: 10px 10px 16px #000000;
-    -webkit-box-shadow: 10px 10px 16px #000000;
     box-shadow: 10px 10px 16px #000000; 
 }
-.education-table{
+.edu-table{
     margin:0px auto 0px auto;
     text-align:center;
 }
-.education-th{
+.edu-th{
     color:#276678;
 }
 
-/* LANG DIV */
+/* lang-div */
 
 .lang-div{ 
     background-image: url(../img/lang.svg);
@@ -139,8 +113,6 @@ tr{
     border-radius: 25px;
     margin: 1%;
     text-align: center;
-    -moz-box-shadow: 10px 10px 16px #000000;
-    -webkit-box-shadow: 10px 10px 16px #000000;
     box-shadow: 10px 10px 16px #000000; 
 }
 .lang-table{
@@ -165,8 +137,6 @@ tr{
     padding:2%;
     border-radius: 25px;
     margin: 1%;
-    -moz-box-shadow: 10px 10px 16px #000000;
-    -webkit-box-shadow: 10px 10px 16px #000000;
     box-shadow: 10px 10px 16px #000000; 
 }
 .op{
@@ -186,8 +156,6 @@ tr{
     border-radius: 25px;
     margin: 1%;
     text-align: center;
-    -moz-box-shadow: 10px 10px 16px #000000;
-    -webkit-box-shadow: 10px 10px 16px #000000;
     box-shadow: 10px 10px 16px #000000; 
 }
 
