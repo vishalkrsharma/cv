@@ -10,17 +10,6 @@ body{
     
 }
 
-hr{
-    width:4%;
-    background-color:#f4f9f9;
-    border-style: dotted none none none;
-    border-color: grey;
-    border-width:5px;
-    display: block;
-    margin:0 auto 0 auto;
-
-}
-
 td,th{
     vertical-align: top;
     padding: 10px 5px 10px 5px;
@@ -61,7 +50,7 @@ tr{
     border-radius: 25px;
     margin: 1%;
     text-align: center;
-    box-shadow: 10px 10px 16px #000000; 
+    box-shadow: 4px 4px 8px #000000; 
     
 }
 .name{
@@ -95,7 +84,7 @@ tr{
     border-radius: 25px;
     margin: 1%;
     text-align: center;
-    box-shadow: 10px 10px 16px #000000; 
+    box-shadow: 4px 4px 8px #000000; 
 }
 .edu-table{
     margin:0px auto 0px auto;
@@ -113,7 +102,7 @@ tr{
     border-radius: 25px;
     margin: 1%;
     text-align: center;
-    box-shadow: 10px 10px 16px #000000; 
+    box-shadow: 4px 4px 8px #000000; 
 }
 .lang-table{
     margin:0px auto 0px auto;
@@ -137,14 +126,19 @@ tr{
     padding:2%;
     border-radius: 25px;
     margin: 1%;
-    box-shadow: 10px 10px 16px #000000; 
+    box-shadow: 4px 4px 8px #000000; 
 }
 .op{
     padding-bottom: 30px;
 }
 .link{
     text-decoration: none;
-    padding:10px
+    padding:10px;
+}
+
+.op-div > .link > img{
+    padding: 2%;
+    padding-top: 4%;
 }
 
 /* CONTACT ME DIV */
@@ -156,17 +150,40 @@ tr{
     border-radius: 25px;
     margin: 1%;
     text-align: center;
-    box-shadow: 10px 10px 16px #000000; 
+    box-shadow: 4px 4px 8px #000000; 
 }
 
 /* MEDIA QUERIES */
 
 @media(max-width:1000px){
-    .hacker{
-        width: 5%;
-    }
-    .intro-div, .education-div, .lang-div, .op-div, .contact-me-div{
+
+    .intro-div, .edu-div, .lang-div, .op-div, .contact-me-div{
         padding:8%;
         margin:5%;
     }
+
+}
+
+@media (min-width:1000px){
+    
+    .flex-div{
+        display:flex;
+        justify-content:space-around;
+        margin:1%;
+        /* padding:2%; */
+    }
+    .lang-div{
+        width:50%;
+        /* margin:0.5% .5% 0.5% 1%; */
+        margin:0;
+        margin-right:0.5%;
+    }
+
+    .op-div{
+        width:50%;
+        /* margin:0.5% 1% 0.5% 0.5%; */
+        margin:0;
+        margin-left:0.5%;
+    }
+
 }
