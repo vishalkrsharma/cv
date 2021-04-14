@@ -2,6 +2,7 @@
 
 * {
     font-weight: 500;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -41,6 +42,29 @@ tr{
 
 /* classes */
 
+/* header */
+
+.header{
+    margin:1%;
+    padding:0 2%;
+    background: url(../img/header.svg);
+    background-size: cover;
+    box-shadow: 4px 4px 8px #000000; 
+    border-radius: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand, .nav-link{
+    text-decoration: none;
+    font-weight: 200;
+    font-family: 'Noto Sans', sans-serif;
+    color: #30475e;
+}
+
 /* intro-div */
 
 .intro-div{ 
@@ -51,7 +75,9 @@ tr{
     margin: 1%;
     text-align: center;
     box-shadow: 4px 4px 8px #000000; 
-    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .name{
     text-align: center;
@@ -59,12 +85,13 @@ tr{
     font-family: 'Sacramento', cursive;
     font-size: 70px;
     margin: 0px;
-    font-weight: 500;
+    font-weight:500;
 }
 .my-pic{
     display:block;
-    margin:1px auto 10px auto;
+    margin:1px auto 1px auto;
     border-radius: 50%;
+    width: 25%;
 }
 .intro{
     text-align:center;
@@ -72,7 +99,7 @@ tr{
     color: #f05454;
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
-    margin:0px;
+    margin: auto auto;
 }
 
 /* education-div */
@@ -157,15 +184,31 @@ tr{
 
 @media(max-width:1000px){
 
-    .intro-div, .edu-div, .lang-div, .op-div, .contact-me-div{
+    .header, .intro-div, .edu-div, .lang-div, .op-div, .contact-me-div{
         padding:8%;
         margin:5%;
+        height:auto;
+    }
+    .header{
+        text-align: center;
+        display:block;
+    }
+
+    .my-pic{
+        width:100%;
+    }
+
+    .nav-brand > h2{
+        display:block;
     }
 
 }
 
 @media (min-width:1000px){
     
+
+    /* classes */
+
     .flex-div{
         display:flex;
         justify-content:space-around;
