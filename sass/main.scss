@@ -54,6 +54,10 @@ tr{
         color: #30475e;
     }
 
+    & .nav-link {
+        padding-left: 15px;
+    }
+
     margin:1%;
     padding:0 2%;
     background: url(../img/header.svg);
@@ -132,13 +136,18 @@ tr{
 @media(max-width:1000px){
 
     .intro-div{
+
+        & .my-pic{
+            width:100%;
+        }
+
+        & .intro {
+            padding-top: 15px;
+        }
+
         padding:8%;
         margin:5%;
         height:auto;
-    }
-
-    .my-pic{
-        width:100%;
     }
     
 }

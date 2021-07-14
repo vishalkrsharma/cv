@@ -50,6 +50,8 @@ tr {
     font-weight: 200;
     font-family: "Comfortaa", cursive;
     color: #30475e; }
+  .header .nav-link {
+    padding-left: 15px; }
 
 @media (max-width: 1000px) {
   .header {
@@ -98,8 +100,10 @@ tr {
     padding: 8%;
     margin: 5%;
     height: auto; }
-  .my-pic {
-    width: 100%; } }
+    .intro-div .my-pic {
+      width: 100%; }
+    .intro-div .intro {
+      padding-top: 15px; } }
 
 /* education-div */
 .edu-div {
