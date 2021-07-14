@@ -1,4 +1,6 @@
 $font: 'Comfortaa', cursive;
+$background: #f9f9f9;
+$dark: #303032;
 
 /* tags */
 
@@ -47,6 +49,51 @@ tr{
 
 .header{
 
+    & .box {
+        padding: 10px;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        border: 4px solid $dark;
+        background-color: $dark;
+        outline: 0;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+      
+    .box::before {
+        content: url(../img/v.svg);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+      
+    .box::after {
+        content: '';
+        position: absolute;
+        background-color: $background;
+        height: 200%;
+        width: 200%;
+        bottom: -50%;
+        left: -50%;
+        border-radius: 40%;
+        animation: spin 4s ease-in-out forwards;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: translateY(0) rotate(0deg);
+        }
+        100% {
+            transform: translateY(-100%) rotate(500deg);
+        }
+    }
+
+    & .nav-brand {
+        padding-left: 100px;
+    }
+
     & .nav-brand , .nav-link {
         text-decoration: none;
         font-weight: 200;
@@ -59,11 +106,11 @@ tr{
     }
 
     margin:1%;
-    padding:0 2%;
+    padding:.5% 1.5%;;
     background: url(../img/header.svg);
     background-size: cover;
     box-shadow: 4px 4px 8px #000000; 
-    border-radius: 25px;
+    border-radius: 10px;
     font-family: $font;
     display:flex;
     flex-direction: row;
@@ -79,9 +126,24 @@ tr{
 
             & h2 {
                 display:block;
+                margin: -5% 0 5% 20%;
             }
 
         }
+
+        & .navbar {
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            grid-gap: 15%;
+
+            & .nav-link {
+                padding: 0;
+            }
+        }
+
+        
 
         padding:8%;
         margin:5%;
